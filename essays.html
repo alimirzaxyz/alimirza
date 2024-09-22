@@ -34,11 +34,60 @@
         nav {
             margin: 20px 0;
         }
+        h3 {
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            text-align: left;
+            color: #000;
+            margin-left: 15%;
+        }
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            text-align: left;
+            margin-left: 15%;
+            color: #585858;
+        }
+        .essay-list {
+            text-align: left;
+            margin-top: 2%;
+            margin-left: 15%;
+        }
+        .essay-list a {
+            display: block; /* Keeps the links in a vertical stack */
+            width: fit-content; /* Limits the clickable area to the text width */
+            font-size: 1.2em;
+            color: #1c19e0;
+            margin: 10px 0;
+            text-decoration: none;
+        }
+        .essay-list a:hover {
+            text-decoration: underline;
+        }
         
         /* Mobile-specific styles */
         @media (max-width: 768px) {
-            img {
-                width: 40%; /* Increase the width for medium screens like tablets */
+            main {
+                margin-top: 30px; /* Adds more space for smaller screens */
+            }
+            h3, p, .essay-list {
+                text-align: center;
+                margin-left: 0; /* Remove left margin on mobile */
+                padding-left: 10px; /* Add padding to prevent text from hitting edges */
+                padding-right: 10px;
+            }
+            h3 {
+                font-size: 22px; /* Smaller font size for mobile */
+                font-weight: 600;
+            }
+            p {
+                font-size: 16px; /* Smaller font size for mobile */
+            }
+            .essay-list a {
+                text-align: center;
+                display: inline-block; /* Center the links */
+                font-size: 20px; /* Slightly smaller font for essay links */
             }
             nav a {
                 margin: 10px; /* Reduced margin between nav links for medium screens */
@@ -46,8 +95,26 @@
             }
         }
         @media (max-width: 480px) {
-            img {
-                width: 60%; /* Increase the width for smaller screens like phones */
+            main {
+                margin-top: 40px; /* Adds more space for smaller screens */
+            }
+            h3, p, .essay-list {
+                text-align: center;
+                margin-left: 0; /* Remove left margin on mobile */
+                padding-left: 10px; /* Add padding to prevent text from hitting edges */
+                padding-right: 10px;
+            }
+            h3 {
+                font-size: 22px; /* Even smaller font size for smaller mobile screens */
+                font-weight: 600;
+            }
+            p {
+                font-size: 14px; /* Smaller font size for mobile */
+            }
+            .essay-list a {
+                text-align: center;
+                display: inline-block; /* Center the links */
+                font-size: 20px; /* Slightly smaller font for essay links */
             }
             nav a {
                 margin: 5px; /* Further reduce margin between nav links for small screens */
@@ -83,7 +150,7 @@
 
     <nav>
         <!-- Main navigation links -->
-        <a href="#">Home</a>
+        <a href="index.html">Home</a>
         <a href="essays.html">Essays</a>
         <a href="projects.html">Projects</a>
         <a href="books.html">Books</a>
@@ -100,7 +167,7 @@
         <h3>Essays</h3>
         <p>My innermost thoughts, expressed in words.</p>
         <div class="essay-list">
-            <a href="#">Essay 1</a>
+            <a href="essay1.html">Essay 1</a>
         </div>
     </main>
 
