@@ -66,13 +66,18 @@
         .project-list a:hover {
             text-decoration: underline;
         }
+        .project-item .description {
+            font-size: 14px; /* Smaller font size for author names */
+            color: #000000;
+            display: block; /* Ensures it appears on the next line */
+        }
 
         /* Mobile-specific styles for body content */
         @media (max-width: 768px) {
             main {
                 margin-top: 30px;
             }
-            h3, p, .project-list {
+            h3, p, .project-list, .description {
                 text-align: center;
                 margin-left: 0;
                 padding-left: 10px;
@@ -90,13 +95,18 @@
                 display: inline-block;
                 font-size: 20px;
             }
+            .description {
+                text-align: center;
+                display: inline-block;
+                font-size: 12px;
+            }
         }
 
         @media (max-width: 480px) {
             main {
                 margin-top: 40px;
             }
-            h3, p, .essay-list {
+            h3, p, .project-list, .description {
                 text-align: center;
                 margin-left: 0;
                 padding-left: 10px;
@@ -113,6 +123,11 @@
                 text-align: center;
                 display: inline-block;
                 font-size: 20px;
+            }
+            .description {
+                text-align: center;
+                display: inline-block;
+                font-size: 12px;
             }
         }
 
@@ -173,10 +188,11 @@
     </nav>
 
     <main>
-        <h3>Essays</h3>
+        <h3>Projects</h3>
         <p>My innermost ideas, expressed in code.</p>
         <div class="project-list">
-            <a href="https://antisocialengineer.github.io/venera-satellite/">Project Venera - Satellite Tracking System</a>
+            <a href="https://antisocialengineer.github.io/venera-satellite/">Project Venera</a>
+            <span class="description">Satellite Tracking System</span>
         </div>
     </main>
 
