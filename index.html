@@ -6,7 +6,7 @@
     <title>Ali's Website</title>
     <style>
         body {
-            font-family: 'Times New Roman', serif;
+            font-family: 'Times New Roman';
             text-align: center;
             margin: 0;
             padding: 0;
@@ -24,44 +24,48 @@
             color: #585858;
         }
         nav a {
-            margin: 0 15px; /* Space between links */
+            margin: 15px;
             text-decoration: underline;
             font-size: 15px;
             font-weight: 500;
             color: #1c19e0;
-            white-space: nowrap; /* Prevent breaking onto new lines */
         }
         nav {
             margin: 20px 0;
         }
-        /* For mobile devices, reduce the spacing between links */
+        img {
+            width: 20%;
+            margin-top: 100px;
+            max-width: 500px; /* Set a maximum width for the image */
+            height: auto; /* Maintain the aspect ratio */
+        }
         @media (max-width: 768px) {
+            img {
+                width: 40%; /* Increase the width for medium screens like tablets */
+            }
             nav a {
-                margin: 0 8px; /* Reduced spacing on mobile */
-            }
-
-            .contact-links {
-                display: block; /* Stack email, LinkedIn, and CV on a new line */
-                margin-top: 10px;
-            }
-
-            .contact-links a {
-                display: inline-block;
-                margin: 0 10px; /* Spacing between the second row of links */
+                margin: 10px; /* Reduced margin between nav links for medium screens */
+                font-size: 14px; /* Slightly smaller font for medium screens */
             }
         }
-
-        /* For very small screens */
         @media (max-width: 480px) {
+            img {
+                width: 60%; /* Increase the width for smaller screens like phones */
+            }
             nav a {
-                font-size: 14px; /* Smaller font size for small screens */
-                margin: 0 5px; /* Further reduce margin on very small devices */
+                margin: 5px; /* Further reduce margin between nav links for small screens */
+                font-size: 13px; /* Smaller font for small screens */
             }
-
-            .contact-links a {
-                font-size: 14px;
-                margin: 0 5px;
-            }
+        }
+        footer {
+            font-size: 15px;
+            line-height: 20px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            color: black;
+        }
+        footer i {
+            font-style: normal;
         }
     </style>
 </head>
@@ -72,19 +76,24 @@
         <h2>industrial engineer</h2>
     </header>
 
-    <!-- Navigation links -->
     <nav>
-        <a href="index.html">Home</a>
+        <a href="#">Home</a>
         <a href="essays.html">Essays</a>
         <a href="projects.html">Projects</a>
         <a href="books.html">Books</a>
-        <!-- Contact Links Section Below -->
-        <div class="contact-links">
-            <a href="mailto:specificemail@example.com">Email</a>
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-            <a href="cv.pdf" target="_blank">CV</a>
-        </div>
+        <a href="mailto:alibmirza1@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/alibaigmirza/">LinkedIn</a>
+        <a href="AliMirza_Resume.pdf">CV</a>
     </nav>
+
+    <main>
+        <img src="NASA50_520_29_ON08.jpg.webp" alt="Rocket Launch">
+    </main>
+
+    <footer>
+        <i>"Strive for perfection in everything you do. Take the best that exists and make it better. When it does not exist, design it."</i><br>
+        - Sir Henry Royce
+    </footer>
 
 </body>
 </html>
