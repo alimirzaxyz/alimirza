@@ -26,7 +26,7 @@
         nav a {
             margin: 15px;
             text-decoration: underline;
-            font-size: 15px;
+            font-size: 15px; /* Keep font size consistent */
             font-weight: 500;
             color: #1c19e0;
         }
@@ -46,19 +46,21 @@
                 width: 40%; /* Increase the width for medium screens like tablets */
             }
             nav a {
-                margin: 10px; /* Reduced margin between nav links for medium screens */
-                font-size: 14px; /* Ensure the same font size as in essays.html */
-                text-decoration: underline;
+                margin: 10px; /* Same margin as in essays.html for mobile */
+                font-size: 14px; /* Set same font size for all nav links on mobile */
                 color: #1c19e0;
+                text-decoration: underline;
             }
         }
+
         @media (max-width: 480px) {
             img {
                 width: 60%; /* Increase the width for smaller screens like phones */
             }
             nav a {
                 margin: 5px; /* Further reduce margin between nav links for small screens */
-                font-size: 14px; /* Same font size for all links on small screens */
+                font-size: 13px; /* Set same font size for all links on small screens */
+                color: #1c19e0;
             }
         }
 
@@ -70,7 +72,7 @@
             }
             .contact-links a {
                 display: inline-block;
-                font-size: 14px; /* Match the font size with other nav links */
+                font-size: 14px; /* Ensure same size as main nav links on mobile */
                 margin: 5px;
                 color: #1c19e0;
                 text-decoration: underline;
@@ -105,7 +107,7 @@
 
     <nav>
         <!-- Main navigation links -->
-        <a href="#">Home</a>
+        <a href="index.html">Home</a>
         <a href="essays.html">Essays</a>
         <a href="projects.html">Projects</a>
         <a href="books.html">Books</a>
