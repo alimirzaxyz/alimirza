@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <style>
+        body {
+            font-family: 'Times New Roman';
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 38px;
+            font-weight: 400;
+            margin-top: 10px;
+            color: #bebebe;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: -15px;
+            color: #585858;
+        }
+        nav a {
+            margin: 15px;
+            text-decoration: underline;
+            font-size: 15px;
+            font-weight: 500;
+            color: #1c19e0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        h3 {
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            text-align: left;
+            color: #000;
+            margin-left: 15%;
+        }
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            text-align: left;
+            margin-left: 15%;
+            color: #585858;
+        }
+        .book-list {
+            text-align: left;
+            margin-top: 2%;
+            margin-left: 15%;
+        }
+        .book-item {
+            margin-bottom: 20px; /* Adds space between each book entry */
+        }
+        .book-item a {
+            font-size: 1.2em;
+            color: #1c19e0;
+            text-decoration: none;
+        }
+        .book-item a:hover {
+            text-decoration: underline;
+        }
+        .book-item .author {
+            font-size: 14px; /* Smaller font size for author names */
+            color: #000000;
+            display: block; /* Ensures it appears on the next line */
+        }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            main {
+                margin-top: 30px; /* Adds more space for smaller screens */
+            }
+            h3, p, .book-list, .author {
+                text-align: center;
+                margin-left: 0; /* Remove left margin on mobile */
+                padding-left: 10px; /* Add padding to prevent text from hitting edges */
+                padding-right: 10px;
+            }
+            h3 {
+                font-size: 22px; /* Smaller font size for mobile */
+                font-weight: 600;
+            }
+            p {
+                font-size: 16px; /* Smaller font size for mobile */
+            }
+            .book-item a {
+                text-align: center;
+                display: inline-block; /* Center the links */
+                font-size: 18px; /* Slightly smaller font for essay links */
+            }
+            .author {
+                text-align: center;
+                display: inline-block;
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            main {
+                margin-top: 40px; /* Adds more space for smaller screens */
+            }
+            h3, p, .book-list, .author {
+                text-align: center;
+                margin-left: 0; /* Remove left margin on mobile */
+                padding-left: 10px; /* Add padding to prevent text from hitting edges */
+                padding-right: 10px;
+            }
+            h3 {
+                font-size: 22px; /* Even smaller font size for smaller mobile screens */
+                font-weight: 600;
+            }
+            p {
+                font-size: 14px; /* Smaller font size for mobile */
+            }
+            .book-item a {
+                text-align: center;
+                display: inline-block; /* Center the links */
+                font-size: 18px; /* Slightly smaller font for essay links */
+            }
+            .author {
+                text-align: center;
+                display: inline-block;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ali Mirza</h1>
+        <h2>industrial engineer</h2>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="essays.html">Essays</a>
+        <a href="projects.html">Projects</a>
+        <a href="books.html">Books</a>
+    </nav>
+
+    <main>
+        <h3>Books</h3>
+        <p>My innermost fantasies, expressed by others.</p>
+        <div class="book-list">
+            <div class="book-item">
+                <a href="https://www.goodreads.com/book/show/11084145-steve-jobs?from_search=true&from_srp=true&qid=nZk8hBxzhP&rank=1">Steve Jobs</a>
+                <span class="author">by Walter Isaacson</span>
+            </div>
+            <div class="book-item">
+                <a href="https://www.goodreads.com/book/show/18170143-an-astronaut-s-guide-to-life-on-earth?ref=nav_sb_ss_1_9">An Astronaut's Guide to Life on Earth</a>
+                <span class="author">by Chris Hadfield</span>
+            </div>
+            <div class="book-item">
+                <a href="https://www.goodreads.com/book/show/20527133-superintelligence?ref=nav_sb_ss_1_12">Superintelligence: Paths, Dangers, Strategies</a>
+                <span class="author">by Nick Bostrom</span>
+            </div>
+            <div class="book-item">
+                <a href="https://www.goodreads.com/book/show/61439040-1984?from_search=true&from_srp=true&qid=LgNnOZxAp7&rank=1">1984</a>
+                <span class="author">by George Orwell</span>
+            </div>
+            <div class="book-item">
+                <a href="https://www.goodreads.com/book/show/58092347-the-hitchiker-s-guide-to-the-galaxy?ref=nav_sb_ss_3_6">The Hitchiker's Guide to the Galaxy</a>
+                <span class="author">by Douglas Adams</span>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: 'Times New Roman';
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 38px;
+            font-weight: 400;
+            margin-top: 10px;
+            color: #bebebe;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: -15px;
+            color: #585858;
+        }
+        nav a {
+            margin: 15px;
+            text-decoration: underline;
+            font-size: 15px;
+            font-weight: 500;
+            color: #1c19e0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        h3 {
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            text-align: left;
+            color: #000;
+            margin-left: 15%;
+        }
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            text-align: left;
+            margin-left: 15%;
+            color: #585858;
+        }
+        .project-list {
+            text-align: left;
+            margin-top: 2%;
+            margin-left: 15%;
+        }
+        .project-list a {
+            display: block; /* Keeps the links in a vertical stack */
+            width: fit-content; /* Limits the clickable area to the text width */
+            font-size: 1.2em;
+            color: #1c19e0;
+            margin: 10px 0;
+            text-decoration: none;
+        }
+        .project-list a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            main {
+                margin-top: 30px; /* Adds more space for smaller screens */
+            }
+            h3, p, .project-list {
+                text-align: center;
+                margin-left: 0; /* Remove left margin on mobile */
+                padding-left: 10px; /* Add padding to prevent text from hitting edges */
+                padding-right: 10px;
+            }
+            h3 {
+                font-size: 22px; /* Smaller font size for mobile */
+                font-weight: 600;
+            }
+            p {
+                font-size: 16px; /* Smaller font size for mobile */
+            }
+            .essay-list a {
+                text-align: center;
+                display: inline-block; /* Center the links */
+                font-size: 20px; /* Slightly smaller font for essay links */
+            }
+        }
+
+        @media (max-width: 480px) {
+            main {
+                margin-top: 40px; /* Adds more space for smaller screens */
+            }
+            h3, p, .project-list {
+                text-align: center;
+                margin-left: 0; /* Remove left margin on mobile */
+                padding-left: 10px; /* Add padding to prevent text from hitting edges */
+                padding-right: 10px;
+            }
+            h3 {
+                font-size: 22px; /* Even smaller font size for smaller mobile screens */
+                font-weight: 600;
+            }
+            p {
+                font-size: 14px; /* Smaller font size for mobile */
+            }
+            .project-list a {
+                text-align: center;
+                display: inline-block; /* Center the links */
+                font-size: 20px; /* Slightly smaller font for essay links */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ali Mirza</h1>
+        <h2>industrial engineer</h2>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="essays.html">Essays</a>
+        <a href="projects.html">Projects</a>
+        <a href="books.html">Books</a>
+    </nav>
+
+    <main>
+        <h3>Projects</h3>
+        <p>My innermost ideas, expressed in code.</p>
+        <div class="project-list">
+            <a href="https://antisocialengineer.github.io/venera-satellite/">Project Venera</a>
+        </div>
+    </main>
+
+</body>
+</html>
