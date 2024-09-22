@@ -57,6 +57,20 @@
                 font-size: 13px; /* Smaller font for small screens */
             }
         }
+        
+        /* Move Email, LinkedIn, and CV links to the line below on mobile */
+        @media (max-width: 768px) {
+            .contact-links {
+                display: block;
+                margin-top: 10px;
+            }
+            .contact-links a {
+                display: inline-block;
+                margin: 5px 10px;
+                font-size: 14px;
+            }
+        }
+
         footer {
             font-size: 15px;
             line-height: 20px;
@@ -77,13 +91,18 @@
     </header>
 
     <nav>
+        <!-- Main navigation links -->
         <a href="#">Home</a>
         <a href="essays.html">Essays</a>
         <a href="projects.html">Projects</a>
         <a href="books.html">Books</a>
-        <a href="mailto:alibmirza1@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/alibaigmirza/">LinkedIn</a>
-        <a href="AliMirza_Resume.pdf">CV</a>
+        
+        <!-- Contact links will move below on mobile -->
+        <div class="contact-links">
+            <a href="mailto:alibmirza1@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/alibaigmirza/">LinkedIn</a>
+            <a href="AliMirza_Resume.pdf">CV</a>
+        </div>
     </nav>
 
     <main>
