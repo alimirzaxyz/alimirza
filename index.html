@@ -23,10 +23,12 @@
             margin-top: -15px;
             color: #585858;
         }
+
+        /* General nav link styles */
         nav a {
-            margin: 15px; /* Same margin as in essays.html */
+            margin: 15px; /* Same margin for all links */
             text-decoration: underline;
-            font-size: 15px; /* Ensure same font size across all links */
+            font-size: 15px; /* Same font size as in essays.html */
             font-weight: 500;
             color: #1c19e0;
         }
@@ -46,8 +48,8 @@
                 width: 40%; /* Increase the width for medium screens like tablets */
             }
             nav a {
-                margin: 10px; /* Reduce margin to match essays.html */
-                font-size: 14px; /* Set the same font size as in essays.html */
+                margin: 10px; /* Match essays.html margin */
+                font-size: 14px; /* Match essays.html font size */
                 color: #1c19e0;
             }
         }
@@ -58,20 +60,20 @@
             }
             nav a {
                 margin: 5px; /* Further reduce margin between nav links for small screens */
-                font-size: 14px; /* Same font size for all links on small screens */
+                font-size: 14px; /* Match the font size */
             }
         }
 
         /* Move Email, LinkedIn, and CV links to a new line on mobile */
         @media (max-width: 768px) {
             .contact-links {
-                display: block; /* This moves the contact links to a new line on mobile */
+                display: block; /* Moves the contact links to a new line on mobile */
                 margin-top: 10px;
             }
             .contact-links a {
                 display: inline-block;
-                font-size: 14px; /* Ensure same size as main nav links on mobile */
-                margin: 10px; /* Ensure the margin matches other nav links */
+                font-size: 14px; /* Ensure the same font size as other nav links */
+                margin: 10px; /* Same margin as main nav links */
                 color: #1c19e0;
                 text-decoration: underline;
             }
