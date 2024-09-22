@@ -23,24 +23,25 @@
             margin-top: -15px;
             color: #585858;
         }
-        /* Apply the same style to all navigation links, including contact links */
         nav a {
             margin: 15px;
             text-decoration: underline;
-            font-size: 15px; /* Ensure the same font size across all links */
+            font-size: 15px;
             font-weight: 500;
             color: #1c19e0;
         }
         nav {
             margin: 20px 0;
         }
+
+        /* Ensure body styling for mobile matches projects.html */
         h3 {
             font-size: 30px;
             font-weight: 500;
             margin-bottom: 10px;
             text-align: left;
             color: #000;
-            margin-left: 15%;
+            margin-left: 15%; /* Same left margin as projects.html */
         }
         p {
             font-size: 18px;
@@ -52,11 +53,11 @@
         .essay-list {
             text-align: left;
             margin-top: 2%;
-            margin-left: 15%;
+            margin-left: 15%; /* Same left margin as projects.html */
         }
         .essay-list a {
-            display: block; /* Keeps the links in a vertical stack */
-            width: fit-content; /* Limits the clickable area to the text width */
+            display: block;
+            width: fit-content;
             font-size: 1.2em;
             color: #1c19e0;
             margin: 10px 0;
@@ -65,92 +66,64 @@
         .essay-list a:hover {
             text-decoration: underline;
         }
-        
-        /* Mobile-specific styles */
+
+        /* Mobile-specific styles for body content */
         @media (max-width: 768px) {
             main {
-                margin-top: 30px; /* Adds more space for smaller screens */
+                margin-top: 30px;
             }
             h3, p, .essay-list {
                 text-align: center;
-                margin-left: 0; /* Remove left margin on mobile */
-                padding-left: 10px; /* Add padding to prevent text from hitting edges */
+                margin-left: 0;
+                padding-left: 10px;
                 padding-right: 10px;
             }
             h3 {
-                font-size: 22px; /* Smaller font size for mobile */
+                font-size: 22px;
                 font-weight: 600;
             }
             p {
-                font-size: 16px; /* Smaller font size for mobile */
+                font-size: 16px;
             }
             .essay-list a {
                 text-align: center;
-                display: inline-block; /* Center the links */
-                font-size: 20px; /* Slightly smaller font for essay links */
-            }
-            nav a {
-                margin: 10px; /* Reduced margin between nav links for medium screens */
-                font-size: 14px; /* Set same font size for all nav links on medium screens */
-            }
-        }
-        @media (max-width: 480px) {
-            main {
-                margin-top: 40px; /* Adds more space for smaller screens */
-            }
-            h3, p, .essay-list {
-                text-align: center;
-                margin-left: 0; /* Remove left margin on mobile */
-                padding-left: 10px; /* Add padding to prevent text from hitting edges */
-                padding-right: 10px;
-            }
-            h3 {
-                font-size: 22px; /* Even smaller font size for smaller mobile screens */
-                font-weight: 600;
-            }
-            p {
-                font-size: 14px; /* Smaller font size for mobile */
-            }
-            .essay-list a {
-                text-align: center;
-                display: inline-block; /* Center the links */
-                font-size: 20px; /* Slightly smaller font for essay links */
-            }
-            nav a {
-                margin: 5px; /* Further reduce margin between nav links for small screens */
-                font-size: 13px; /* Same font size for all links on small screens */
+                display: inline-block;
+                font-size: 20px;
             }
         }
 
-        /* Move Email, LinkedIn, and CV links to a new line on mobile */
-        @media (max-width: 768px) {
-                        main {
-                margin-top: 30px; /* Adds more space for smaller screens */
+        @media (max-width: 480px) {
+            main {
+                margin-top: 40px;
             }
             h3, p, .essay-list {
                 text-align: center;
-                margin-left: 0; /* Remove left margin on mobile */
-                padding-left: 10px; /* Add padding to prevent text from hitting edges */
+                margin-left: 0;
+                padding-left: 10px;
                 padding-right: 10px;
             }
             h3 {
-                font-size: 22px; /* Smaller font size for mobile */
+                font-size: 22px;
                 font-weight: 600;
             }
             p {
-                font-size: 16px; /* Smaller font size for mobile */
+                font-size: 14px;
             }
             .essay-list a {
                 text-align: center;
-                display: inline-block; /* Center the links */
-                font-size: 20px; /* Slightly smaller font for essay links */
+                display: inline-block;
+                font-size: 20px;
             }
+        }
+
+        /* Keep Email, LinkedIn, and CV links on a new line for mobile */
+        @media (max-width: 768px) {
             nav a {
-                margin: 10px; /* Reduced margin between nav links for medium screens */
-                font-size: 14px; /* Set same font size for all nav links on medium screens */
+                margin: 10px;
+                font-size: 14px;
             }
             .contact-links {
-                display: block; /* This moves the contact links to a new line on mobile */
+                display: block;
                 margin-top: 10px;
             }
             .contact-links a {
@@ -158,11 +131,22 @@
             }
         }
 
-        /* Keep Email, LinkedIn, and CV on the same line on desktop */
+        /* Keep Email, LinkedIn, and CV on the same line for larger screens */
         @media (min-width: 769px) {
             .contact-links {
-                display: inline; /* Keep them inline for larger screens */
+                display: inline;
             }
+        }
+
+        footer {
+            font-size: 15px;
+            line-height: 20px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            color: black;
+        }
+        footer i {
+            font-style: normal;
         }
     </style>
 </head>
@@ -180,7 +164,7 @@
         <a href="projects.html">Projects</a>
         <a href="books.html">Books</a>
         
-        <!-- Contact links will stay on the same line on desktop, move to a new line on mobile -->
+        <!-- Contact links -->
         <div class="contact-links">
             <a href="mailto:alibmirza1@gmail.com">Email</a>
             <a href="https://www.linkedin.com/in/alibaigmirza/">LinkedIn</a>
