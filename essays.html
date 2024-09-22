@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Essays</title>
+    <title>The Antisocial Engineer</title>
     <style>
         body {
             font-family: 'Times New Roman';
@@ -23,93 +23,53 @@
             margin-top: -15px;
             color: #585858;
         }
+        /* Apply the same style to all navigation links, including contact links */
         nav a {
             margin: 15px;
             text-decoration: underline;
-            font-size: 15px;
+            font-size: 15px; /* Ensure the same font size across all links */
             font-weight: 500;
             color: #1c19e0;
         }
         nav {
             margin: 20px 0;
         }
-        h3 {
-            font-size: 30px;
-            font-weight: 500;
-            margin-bottom: 10px;
-            text-align: left;
-            color: #000;
-            margin-left: 15%;
-        }
-        p {
-            font-size: 18px;
-            font-weight: 400;
-            text-align: left;
-            margin-left: 15%;
-            color: #585858;
-        }
-        .essay-list {
-            text-align: left;
-            margin-top: 2%;
-            margin-left: 15%;
-        }
-        .essay-list a {
-            display: block; /* Keeps the links in a vertical stack */
-            font-size: 1.2em;
-            color: #1c19e0;
-            margin: 10px 0;
-            text-decoration: none;
-        }
-        .essay-list a:hover {
-            text-decoration: underline;
-        }
-
-        /* Media Query for Mobile Devices */
+        
+        /* Mobile-specific styles */
         @media (max-width: 768px) {
-            main {
-                margin-top: 30px; /* Adds more space for smaller screens */
+            img {
+                width: 40%; /* Increase the width for medium screens like tablets */
             }
-            h3, p, .essay-list {
-                text-align: center;
-                margin-left: 0; /* Remove left margin on mobile */
-                padding-left: 10px; /* Add padding to prevent text from hitting edges */
-                padding-right: 10px;
+            nav a {
+                margin: 10px; /* Reduced margin between nav links for medium screens */
+                font-size: 14px; /* Set same font size for all nav links on medium screens */
             }
-            h3 {
-                font-size: 22px; /* Smaller font size for mobile */
-                font-weight: 600;
+        }
+        @media (max-width: 480px) {
+            img {
+                width: 60%; /* Increase the width for smaller screens like phones */
             }
-            p {
-                font-size: 16px; /* Smaller font size for mobile */
-            }
-            .essay-list a {
-                text-align: center;
-                display: inline-block; /* Center the links */
-                font-size: 20px; /* Slightly smaller font for essay links */
+            nav a {
+                margin: 5px; /* Further reduce margin between nav links for small screens */
+                font-size: 13px; /* Same font size for all links on small screens */
             }
         }
 
-        @media (max-width: 480px) {
-            main {
-                margin-top: 40px; /* Adds more space for smaller screens */
+        /* Move Email, LinkedIn, and CV links to a new line on mobile */
+        @media (max-width: 768px) {
+            .contact-links {
+                display: block; /* This moves the contact links to a new line on mobile */
+                margin-top: 10px;
             }
-            h3, p, .essay-list {
-                text-align: center;
-                margin-left: 0; /* Remove left margin on mobile */
-                padding-left: 10px; /* Add padding to prevent text from hitting edges */
-                padding-right: 10px;
+            .contact-links a {
+                display: inline-block;
             }
-            h3 {
-                font-size: 22px; /* Even smaller font size for smaller mobile screens */
-                font-weight: 600;
-            }
-            p {
-                font-size: 14px; /* Smaller font size for mobile */
-            }
-            .essay-list a {
-                text-align: center;
-                display: inline-block; /* Center the links */
-                font-size: 20px; /* Slightly smaller font for essay links */
+        }
+
+        /* Keep Email, LinkedIn, and CV on the same line on desktop */
+        @media (min-width: 769px) {
+            .contact-links {
+                display: inline; /* Keep them inline for larger screens */
             }
         }
     </style>
@@ -122,20 +82,25 @@
     </header>
 
     <nav>
-        <a href="index.html">Home</a>
+        <!-- Main navigation links -->
+        <a href="#">Home</a>
         <a href="essays.html">Essays</a>
         <a href="projects.html">Projects</a>
         <a href="books.html">Books</a>
-        <a href="mailto:alibmirza1@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/alibaigmirza/">LinkedIn</a>
-        <a href="AliMirza_Resume.pdf">CV</a>
+        
+        <!-- Contact links will stay on the same line on desktop, move to a new line on mobile -->
+        <div class="contact-links">
+            <a href="mailto:alibmirza1@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/alibaigmirza/">LinkedIn</a>
+            <a href="AliMirza_Resume.pdf">CV</a>
+        </div>
     </nav>
 
     <main>
         <h3>Essays</h3>
         <p>My innermost thoughts, expressed in words.</p>
         <div class="essay-list">
-            <a href="essay1.html">Essay 1 - The Future of Satcom</a>
+            <a href="#">Essay 1</a>
         </div>
     </main>
 
