@@ -24,20 +24,29 @@
             color: #585858;
         }
 
-        /* Nav link styling */
+        /* General nav link styles */
         nav a {
-            margin: 15px; /* Consistent margin */
+            margin: 15px; /* Same margin for all links */
             text-decoration: underline;
-            font-size: 15px; /* Same font size as essays.html */
+            font-size: 15px; /* Same font size as in essays.html */
             font-weight: 500;
             color: #1c19e0;
         }
         nav {
             margin: 20px 0;
         }
+        img {
+            width: 20%;
+            margin-top: 100px;
+            max-width: 500px; /* Set a maximum width for the image */
+            height: auto; /* Maintain the aspect ratio */
+        }
 
         /* Mobile-specific styles */
         @media (max-width: 768px) {
+            img {
+                width: 40%; /* Increase the width for medium screens like tablets */
+            }
             nav a {
                 margin: 10px; /* Match essays.html margin */
                 font-size: 14px; /* Match essays.html font size */
@@ -46,31 +55,30 @@
         }
 
         @media (max-width: 480px) {
+            img {
+                width: 60%; /* Increase the width for smaller screens like phones */
+            }
             nav a {
-                margin: 5px; /* Further reduce margin */
-                font-size: 14px; /* Same font size */
+                margin: 5px; /* Further reduce margin between nav links for small screens */
+                font-size: 14px; /* Match the font size */
             }
         }
 
         /* Move Email, LinkedIn, and CV links to a new line on mobile */
         @media (max-width: 768px) {
             .contact-links {
-                display: block; /* Moves the contact links to a new line */
+                display: block; /* Moves the contact links to a new line on mobile */
                 margin-top: 10px;
             }
             .contact-links a {
                 display: inline-block;
-                font-size: 14px; /* Ensure same size as nav links */
-                margin: 10px; /* Consistent margin */
-                color: #1c19e0;
-                text-decoration: underline;
             }
         }
 
         /* Keep Email, LinkedIn, and CV on the same line for larger screens */
         @media (min-width: 769px) {
             .contact-links {
-                display: inline;
+                display: inline; /* Keep them inline for larger screens */
             }
         }
 
@@ -100,7 +108,7 @@
         <a href="projects.html">Projects</a>
         <a href="books.html">Books</a>
         
-        <!-- Contact links -->
+        <!-- Contact links will stay on the same line on desktop, move to a new line on mobile -->
         <div class="contact-links">
             <a href="mailto:alibmirza1@gmail.com">Email</a>
             <a href="https://www.linkedin.com/in/alibaigmirza/">LinkedIn</a>
@@ -108,8 +116,10 @@
         </div>
     </nav>
 
-    <!-- Temporarily removed the image to test layout consistency -->
-    
+    <main>
+        <img src="NASA50_520_29_ON08.jpg.webp" alt="Rocket Launch">
+    </main>
+
     <footer>
         <i>"Strive for perfection in everything you do. Take the best that exists and make it better. When it does not exist, design it."</i><br>
         - Sir Henry Royce
