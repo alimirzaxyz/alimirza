@@ -124,6 +124,31 @@
 
         /* Move Email, LinkedIn, and CV links to a new line on mobile */
         @media (max-width: 768px) {
+                        main {
+                margin-top: 30px; /* Adds more space for smaller screens */
+            }
+            h3, p, .essay-list {
+                text-align: center;
+                margin-left: 0; /* Remove left margin on mobile */
+                padding-left: 10px; /* Add padding to prevent text from hitting edges */
+                padding-right: 10px;
+            }
+            h3 {
+                font-size: 22px; /* Smaller font size for mobile */
+                font-weight: 600;
+            }
+            p {
+                font-size: 16px; /* Smaller font size for mobile */
+            }
+            .essay-list a {
+                text-align: center;
+                display: inline-block; /* Center the links */
+                font-size: 20px; /* Slightly smaller font for essay links */
+            }
+            nav a {
+                margin: 10px; /* Reduced margin between nav links for medium screens */
+                font-size: 14px; /* Set same font size for all nav links on medium screens */
+            }
             .contact-links {
                 display: block; /* This moves the contact links to a new line on mobile */
                 margin-top: 10px;
