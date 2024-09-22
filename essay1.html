@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Essay 1</title>
+    <title>Essay 1 - The Future of Satcom</title>
     <style>
         body {
             font-family: 'Times New Roman';
@@ -37,7 +37,7 @@
             font-size: 24px;
             font-weight: 600;
             margin-top: 4%;
-            margin-bottom: 2;
+            margin-bottom: 2px;
             text-align: left;
             color: #000;
             margin-left: 15%;
@@ -61,11 +61,10 @@
 
         /* Media Query for Mobile Devices */
         @media (max-width: 768px) {
-            h3, p, .essay-list {
-                text-align: center;
-                margin-left: 0; /* Remove left margin on mobile */
-                padding-left: 10px; /* Add padding to prevent text from hitting edges */
-                padding-right: 10px;
+            h3, h4, p {
+                text-align: left; /* Keep text left-aligned */
+                margin-left: 5%; /* Reduce margin for smaller screens */
+                margin-right: 5%; /* Reduce right margin for consistency */
             }
             h3 {
                 font-size: 22px; /* Smaller font size for mobile */
@@ -81,18 +80,17 @@
         }
 
         @media (max-width: 480px) {
-            h3, p, .essay-list {
-                text-align: center;
-                margin-left: 0; /* Remove left margin on mobile */
-                padding-left: 10px; /* Add padding to prevent text from hitting edges */
-                padding-right: 10px;
+            h3, h4, p {
+                text-align: left; /* Keep text left-aligned */
+                margin-left: 5%; /* Maintain margin for smaller devices */
+                margin-right: 5%; /* Maintain right margin */
             }
             h3 {
-                font-size: 22px; /* Even smaller font size for smaller mobile screens */
+                font-size: 20px; /* Smaller font size for smaller mobile screens */
                 font-weight: 600;
             }
             h4 {
-                font-size: 18px; /* Smaller font size for mobile */
+                font-size: 16px; /* Smaller font size for mobile */
                 font-weight: 600;
             }
             p {
