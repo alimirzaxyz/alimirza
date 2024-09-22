@@ -33,15 +33,13 @@
         nav {
             margin: 20px 0;
         }
-
-        /* Ensure body styling for mobile matches projects.html */
         h3 {
             font-size: 30px;
             font-weight: 500;
             margin-bottom: 10px;
             text-align: left;
             color: #000;
-            margin-left: 15%; /* Same left margin as projects.html */
+            margin-left: 15%;
         }
         p {
             font-size: 18px;
@@ -53,17 +51,17 @@
         .project-list {
             text-align: left;
             margin-top: 2%;
-            margin-left: 15%; /* Same left margin as projects.html */
+            margin-left: 15%;
         }
-        .project-list a {
-            display: block;
-            width: fit-content;
+        .project-item {
+            margin-bottom: 20px; /* Adds space between each book entry */
+        }
+        .project-item a {
             font-size: 1.2em;
             color: #1c19e0;
-            margin: 10px 0;
             text-decoration: none;
         }
-        .project-list a:hover {
+        .project-item a:hover {
             text-decoration: underline;
         }
         .project-item .description {
@@ -72,73 +70,69 @@
             display: block; /* Ensures it appears on the next line */
         }
 
-        /* Mobile-specific styles for body content */
+        /* Media Query for Mobile Devices */
         @media (max-width: 768px) {
             main {
-                margin-top: 30px;
+                margin-top: 30px; /* Adds more space for smaller screens */
             }
             h3, p, .project-list, .description {
                 text-align: center;
-                margin-left: 0;
-                padding-left: 10px;
+                margin-left: 0; /* Remove left margin on mobile */
+                padding-left: 10px; /* Add padding to prevent text from hitting edges */
                 padding-right: 10px;
             }
             h3 {
-                font-size: 22px;
+                font-size: 22px; /* Smaller font size for mobile */
                 font-weight: 600;
             }
             p {
-                font-size: 16px;
+                font-size: 16px; /* Smaller font size for mobile */
             }
-            .project-list a {
+            .project-item a {
                 text-align: center;
-                display: block;
-                font-size: 20px;
+                display: inline-block; /* Center the links */
+                font-size: 18px; /* Slightly smaller font for essay links */
             }
             .description {
                 text-align: center;
-                display: block;
+                display: inline-block;
                 font-size: 12px;
             }
         }
 
         @media (max-width: 480px) {
             main {
-                margin-top: 40px;
+                margin-top: 40px; /* Adds more space for smaller screens */
             }
             h3, p, .project-list, .description {
                 text-align: center;
-                margin-left: 0;
-                padding-left: 10px;
+                margin-left: 0; /* Remove left margin on mobile */
+                padding-left: 10px; /* Add padding to prevent text from hitting edges */
                 padding-right: 10px;
             }
             h3 {
-                font-size: 22px;
+                font-size: 22px; /* Even smaller font size for smaller mobile screens */
                 font-weight: 600;
             }
             p {
-                font-size: 14px;
+                font-size: 14px; /* Smaller font size for mobile */
             }
-            .project-list a {
+            .project-item a {
                 text-align: center;
-                display: block;
-                font-size: 20px;
+                display: inline-block; /* Center the links */
+                font-size: 18px; /* Slightly smaller font for essay links */
             }
             .description {
                 text-align: center;
-                display: block;
+                display: inline-block;
                 font-size: 12px;
             }
         }
 
-        /* Keep Email, LinkedIn, and CV links on a new line for mobile */
-        @media (max-width: 768px) {
-            nav a {
-                margin: 10px;
-                font-size: 14px;
-            }
+                /* Move Email, LinkedIn, and CV links to a new line on mobile */
+                @media (max-width: 768px) {
             .contact-links {
-                display: block;
+                display: block; /* This moves the contact links to a new line on mobile */
                 margin-top: 10px;
             }
             .contact-links a {
@@ -146,22 +140,11 @@
             }
         }
 
-        /* Keep Email, LinkedIn, and CV on the same line for larger screens */
+        /* Keep Email, LinkedIn, and CV on the same line on desktop */
         @media (min-width: 769px) {
             .contact-links {
-                display: inline;
+                display: inline; /* Keep them inline for larger screens */
             }
-        }
-
-        footer {
-            font-size: 15px;
-            line-height: 20px;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            color: black;
-        }
-        footer i {
-            font-style: normal;
         }
     </style>
 </head>
@@ -173,17 +156,16 @@
     </header>
 
     <nav>
-        <!-- Main navigation links -->
         <a href="index.html">Home</a>
         <a href="essays.html">Essays</a>
         <a href="projects.html">Projects</a>
         <a href="books.html">Books</a>
-        
-        <!-- Contact links -->
+
+        <!-- Contact links will stay on the same line on desktop, move to a new line on mobile -->
         <div class="contact-links">
-            <a href="mailto:alibmirza1@gmail.com">Email</a>
-            <a href="https://www.linkedin.com/in/alibaigmirza/">LinkedIn</a>
-            <a href="AliMirza_Resume.pdf">CV</a>
+        <a href="mailto:alibmirza1@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/alibaigmirza/">LinkedIn</a>
+        <a href="AliMirza_Resume.pdf">CV</a>
         </div>
     </nav>
 
@@ -191,8 +173,10 @@
         <h3>Projects</h3>
         <p>My innermost ideas, expressed in code.</p>
         <div class="project-list">
-            <a href="https://antisocialengineer.github.io/venera-satellite/">Project Venera</a>
-            <span class="description">Satellite Tracking System</span>
+            <div class="project-item">
+                <a href="https://antisocialengineer.github.io/venera-satellite/">Project Venera</a>
+                <span class="description">Satellite Tracking System</span>
+            </div>
         </div>
     </main>
 
