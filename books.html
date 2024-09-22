@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Books</title>
+    <title>Books - Ali's Website</title>
     <style>
         body {
             font-family: 'Times New Roman';
@@ -128,6 +128,24 @@
                 font-size: 12px;
             }
         }
+
+                /* Move Email, LinkedIn, and CV links to a new line on mobile */
+                @media (max-width: 768px) {
+            .contact-links {
+                display: block; /* This moves the contact links to a new line on mobile */
+                margin-top: 10px;
+            }
+            .contact-links a {
+                display: inline-block;
+            }
+        }
+
+        /* Keep Email, LinkedIn, and CV on the same line on desktop */
+        @media (min-width: 769px) {
+            .contact-links {
+                display: inline; /* Keep them inline for larger screens */
+            }
+        }
     </style>
 </head>
 <body>
@@ -142,9 +160,13 @@
         <a href="essays.html">Essays</a>
         <a href="projects.html">Projects</a>
         <a href="books.html">Books</a>
+
+        <!-- Contact links will stay on the same line on desktop, move to a new line on mobile -->
+        <div class="contact-links">
         <a href="mailto:alibmirza1@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/alibaigmirza/">LinkedIn</a>
         <a href="AliMirza_Resume.pdf">CV</a>
+        </div>
     </nav>
 
     <main>
