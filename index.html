@@ -24,11 +24,11 @@
             color: #585858;
         }
 
-        /* Nav link styling */
+        /* Nav link styling for desktop and mobile */
         nav a {
-            margin: 15px;
+            margin: 15px;  /* Standard spacing for desktop */
             text-decoration: underline;
-            font-size: 15px;
+            font-size: 15px;  /* Keep font size consistent */
             font-weight: 500;
             color: #1c19e0;
         }
@@ -36,32 +36,36 @@
             margin: 20px 0;
         }
 
+        /* Image style */
         img {
             width: 20%;
             margin-top: 100px;
-            max-width: 500px; /* Set a maximum width for the image */
+            max-width: 500px; /* Maintain max width */
             height: auto; /* Maintain the aspect ratio */
         }
 
         /* Mobile-specific styles */
         @media (max-width: 768px) {
             nav a {
-                margin: 8px 10px; /* Adjust spacing to fix the issue */
-                font-size: 14px; /* Ensure font size is the same */
-                color: #1c19e0;
+                margin: 8px 10px; /* Adjust spacing on mobile */
+                font-size: 14px;  /* Ensure consistent font size on mobile */
                 text-decoration: underline;
+                color: #1c19e0;
+            }
+            img {
+                width: 80%; /* Increase image size on mobile */
             }
 
-            /* Move Email, LinkedIn, and CV to a new line */
+            /* Contact links on a separate line on mobile */
             .contact-links {
                 display: block;
                 margin-top: 10px;
             }
-
             .contact-links a {
                 display: inline-block;
-                margin: 5px 10px; /* Adjust margin to match the main nav links */
-                font-size: 14px; /* Same font size as main nav links */
+                margin: 8px;  /* Ensure spacing is consistent for contact links */
+                font-size: 14px; /* Same font size as nav links */
+                text-decoration: underline;
                 color: #1c19e0;
             }
         }
@@ -99,7 +103,7 @@
         <a href="projects.html">Projects</a>
         <a href="books.html">Books</a>
         
-        <!-- Contact links will stay on the same line on desktop, move to a new line on mobile -->
+        <!-- Contact links -->
         <div class="contact-links">
             <a href="mailto:alibmirza1@gmail.com">Email</a>
             <a href="https://www.linkedin.com/in/alibaigmirza/">LinkedIn</a>
