@@ -23,8 +23,6 @@
             margin-top: -15px;
             color: #585858;
         }
-
-        /* Nav link styling for desktop and mobile */
         nav a {
             margin: 15px;  /* Standard spacing for desktop */
             text-decoration: underline;
@@ -35,7 +33,21 @@
         nav {
             margin: 20px 0;
         }
-
+        h3 {
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            text-align: left;
+            color: #000;
+            margin-left: 15%;
+        }
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            text-align: left;
+            margin-left: 15%;
+            color: #585858;
+        }
         /* Image style */
         img {
             width: 20%;
@@ -46,6 +58,22 @@
 
         /* Mobile-specific styles */
         @media (max-width: 768px) {
+            main {
+                margin-top: 30px; /* Adds more space for smaller screens */
+            }
+            h3, p {
+                text-align: center;
+                margin-left: 0; /* Remove left margin on mobile */
+                padding-left: 10px; /* Add padding to prevent text from hitting edges */
+                padding-right: 10px;
+            }
+            h3 {
+                font-size: 22px; /* Even smaller font size for smaller mobile screens */
+                font-weight: 600;
+            }
+            p {
+                font-size: 14px; /* Smaller font size for mobile */
+            }
             nav a {
                 margin: 8px 10px; /* Adjust spacing on mobile */
                 font-size: 14px;  /* Ensure consistent font size on mobile */
@@ -53,23 +81,46 @@
                 color: #1c19e0;
             }
             img {
-                width: 80%; /* Increase image size on mobile */
+                width: 60%; /* Increase image size on mobile */
             }
-
-            /* Contact links on a separate line on mobile */
+        }
+        @media (max-width: 480px) {
+            main {
+                margin-top: 40px; /* Adds more space for smaller screens */
+            }
+            h3, p {
+                text-align: center;
+                margin-left: 0; /* Remove left margin on mobile */
+                padding-left: 10px; /* Add padding to prevent text from hitting edges */
+                padding-right: 10px;
+            }
+            h3 {
+                font-size: 22px; /* Even smaller font size for smaller mobile screens */
+                font-weight: 600;
+            }
+            p {
+                font-size: 14px; /* Smaller font size for mobile */
+            }
+            nav a {
+                margin: 8px 10px; /* Adjust spacing on mobile */
+                font-size: 14px;  /* Ensure consistent font size on mobile */
+                text-decoration: underline;
+                color: #1c19e0;
+            }
+            img {
+                width: 60%; /* Increase image size on mobile */
+            }
+        }
+        /* Move Email, LinkedIn, and CV links to a new line on mobile */
+        @media (max-width: 768px) {
             .contact-links {
-                display: block;
+                display: block; /* This moves the contact links to a new line on mobile */
                 margin-top: 10px;
             }
             .contact-links a {
                 display: inline-block;
-                margin: 8px;  /* Ensure spacing is consistent for contact links */
-                font-size: 14px; /* Same font size as nav links */
-                text-decoration: underline;
-                color: #1c19e0;
             }
         }
-
         /* Keep Email, LinkedIn, and CV on the same line for larger screens */
         @media (min-width: 769px) {
             .contact-links {
