@@ -20,7 +20,7 @@
         h2 {
             font-size: 20px;
             font-weight: 400;
-            margin-top: -15px;
+            margin-top: -25px;
             color: #585858;
         }
         nav a {
@@ -58,10 +58,34 @@
             margin-right: 15%;
             color: #585858;
         }
+        .essay-list {
+            text-align: left;
+            margin-top: 2%;
+            margin-left: 15%;
+        }
+        .essay-item {
+            margin-bottom: 20px; /* Adds space between each book entry */
+        }
+        .essay-item a {
+            font-size: 1.2em;
+            color: #1c19e0;
+            text-decoration: none;
+        }
+        .essay-item a:hover {
+            text-decoration: underline;
+        }
+        .essay-item .description {
+            font-size: 14px; /* Smaller font size for author names */
+            color: #000000;
+            display: block; /* Ensures it appears on the next line */
+        }
 
         /* Media Query for Mobile Devices */
         @media (max-width: 768px) {
-            h3, h4, p {
+            main {
+                margin-top: 30px; /* Adds more space for smaller screens */
+            }
+            h3, h4, p, .essay-list, .description {
                 text-align: left; /* Keep text left-aligned */
                 margin-left: 5%; /* Reduce margin for smaller screens */
                 margin-right: 5%; /* Reduce right margin for consistency */
@@ -77,10 +101,23 @@
             p {
                 font-size: 16px; /* Smaller font size for mobile */
             }
+            .essay-item a {
+                text-align: center;
+                display: inline-block; /* Center the links */
+                font-size: 18px; /* Slightly smaller font for essay links */
+            }
+            .description {
+                text-align: center;
+                display: inline-block;
+                font-size: 12px;
+            }
         }
 
         @media (max-width: 480px) {
-            h3, h4, p {
+            main {
+                margin-top: 40px; /* Adds more space for smaller screens */
+            }
+            h3, h4, p, .essay-list, .description {
                 text-align: left; /* Keep text left-aligned */
                 margin-left: 5%; /* Maintain margin for smaller devices */
                 margin-right: 5%; /* Maintain right margin */
@@ -95,6 +132,34 @@
             }
             p {
                 font-size: 14px; /* Smaller font size for mobile */
+            }
+            .essay-item a {
+                text-align: center;
+                display: inline-block; /* Center the links */
+                font-size: 18px; /* Slightly smaller font for essay links */
+            }
+            .description {
+                text-align: center;
+                display: inline-block;
+                font-size: 12px;
+            }
+        }
+
+                        /* Move Email, LinkedIn, and CV links to a new line on mobile */
+                        @media (max-width: 768px) {
+            .contact-links {
+                display: block; /* This moves the contact links to a new line on mobile */
+                margin-top: 10px;
+            }
+            .contact-links a {
+                display: inline-block;
+            }
+        }
+
+        /* Keep Email, LinkedIn, and CV on the same line on desktop */
+        @media (min-width: 769px) {
+            .contact-links {
+                display: inline; /* Keep them inline for larger screens */
             }
         }
     </style>
