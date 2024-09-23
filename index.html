@@ -24,17 +24,18 @@
             color: #585858;
         }
 
-        /* General nav link styles */
+        /* Nav link styling */
         nav a {
-            margin: 15px; /* Same margin for all links */
+            margin: 15px;
             text-decoration: underline;
-            font-size: 15px; /* Same font size as in essays.html */
+            font-size: 15px;
             font-weight: 500;
             color: #1c19e0;
         }
         nav {
             margin: 20px 0;
         }
+
         img {
             width: 20%;
             margin-top: 100px;
@@ -44,41 +45,31 @@
 
         /* Mobile-specific styles */
         @media (max-width: 768px) {
-            img {
-                width: 40%; /* Increase the width for medium screens like tablets */
-            }
             nav a {
-                margin: 10px; /* Match essays.html margin */
-                font-size: 14px; /* Match essays.html font size */
+                margin: 8px 10px; /* Adjust spacing to fix the issue */
+                font-size: 14px; /* Ensure font size is the same */
                 color: #1c19e0;
+                text-decoration: underline;
             }
-        }
 
-        @media (max-width: 480px) {
-            img {
-                width: 60%; /* Increase the width for smaller screens like phones */
-            }
-            nav a {
-                margin: 5px; /* Further reduce margin between nav links for small screens */
-                font-size: 14px; /* Match the font size */
-            }
-        }
-
-        /* Move Email, LinkedIn, and CV links to a new line on mobile */
-        @media (max-width: 768px) {
+            /* Move Email, LinkedIn, and CV to a new line */
             .contact-links {
-                display: block; /* Moves the contact links to a new line on mobile */
+                display: block;
                 margin-top: 10px;
             }
+
             .contact-links a {
                 display: inline-block;
+                margin: 5px 10px; /* Adjust margin to match the main nav links */
+                font-size: 14px; /* Same font size as main nav links */
+                color: #1c19e0;
             }
         }
 
         /* Keep Email, LinkedIn, and CV on the same line for larger screens */
         @media (min-width: 769px) {
             .contact-links {
-                display: inline; /* Keep them inline for larger screens */
+                display: inline;
             }
         }
 
